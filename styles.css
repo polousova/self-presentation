@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/PTSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/PTSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/PTSans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+/* global reset */
+html, body, body div, div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, main, nav, section, input, textarea, select, option {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+html * {
+    max-height: 1000000px;
+}
+
+/* common */
+a {
+    text-decoration: none;
+    color: #696969; 
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+p {
+    font-style: italic;
+    margin: 15px;
+}
+span {
+    color: #800000;
+}
+ul{
+    padding: 0 70px;
+}
+ul a{
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+}
+li{
+    font-weight: normal;
+    font-style: normal;
+    list-style-image: url('images/marker.svg');
+}
+
+/* structure */
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    font: normal 400 20px/28px 'PT Sans';
+    color: #696969;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "a" "b" "c";
+}
+header {
+    height: 100px;
+    background: #FFF8DC;
+    grid-area: a;
+}
+main {
+    background-image: url('images/bckgr.jpeg');
+    grid-area: b;
+}
+footer {
+    height: 100px;
+    background: #696969;
+    grid-area: c;
+}
+
+/*header*/
+header img{
+    position: absolute;
+    top: 25px;
+    left: 80px;
+}
+header img{
+    width: 50px;
+}
+
+/*main*/
+.container{
+    display: flex;
+    width: 90%;
+}
+.liner{
+    height: 1px;
+    border-top: 1px solid rgba(142,114,75,.4);
+}
+main img{
+    width: 600px;
+    padding: 30px;
+    clip-path: circle(40%);
+}
+.text{
+    width: 90%;
+    padding: 30px;
+    background: rgba(255,248,220,.3);
+    margin-top: 30px;
+}
+
+/*footer*/
+footer p {
+    text-align: center;
+    color: #FFFFFF;
+    font-style: normal;
+    padding: 20px;
+}
