@@ -141,7 +141,6 @@ main img{
     width: 20%;
 }
 .element2{
-    float: left;
     text-align: center;
 }
 .element2 img{
@@ -149,7 +148,6 @@ main img{
     padding: 10px;
 }
 .element3{
-    float: right;
     text-align: center;
 }
 .element3 img{
