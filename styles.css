@@ -71,10 +71,11 @@ li{
 
 /* structure */
 html {
-    height: 100%;
+    min-height: 100%;
 }
 body {
     min-height: 100%;
+    width: 100%;
     margin: 0;
     font: normal 400 20px/30px 'PT Sans';
     color: #696969;
@@ -112,27 +113,26 @@ header img{
     display: flex;
     flex: none;
     align-items: center;
-    width: 90%;
+    align-content: start;
+    width: 100%;
 }
 .liner{
     height: 1px;
     border-top: 1px solid rgba(142,114,75,.4);
 }
 main img{
-    align-self: flex-start;
-    width: 600px;
+    max-width: 600px;
     clip-path: circle(38%);
 }
 .text{
-    width: 90%;
+    min-width: 60%;
     padding: 5px 30px 30px;
     background: rgba(255,248,220,.3);
 }
 
 /*PAGE2*/
 .container2{
-    display: flex;
-    flex: none;
+    display: grid;
     align-items: center; 
     align-content: center;
 }
@@ -163,7 +163,7 @@ main img{
 /*footer*/
 footer p {
     text-align: center;
-    color: #696969;
+    color: #fff;
     font-style: normal;
     padding: 20px;
 }
